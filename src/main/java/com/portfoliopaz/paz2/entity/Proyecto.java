@@ -1,14 +1,10 @@
 package com.portfoliopaz.paz2.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
 @Entity
 public class Proyecto {
     
@@ -29,5 +25,45 @@ public class Proyecto {
         this.descripcionProyecto = descripcionProyecto;
         this.linkProyecto = linkProyecto;
     }
- 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getImgProyecto() {
+        return imgProyecto;
+    }
+
+    public void setImgProyecto(String imgProyecto) {
+        this.imgProyecto = imgProyecto;
+    }
+
+    public String getNombreProyecto() {
+        return nombreProyecto;
+    }
+
+    public void setNombreProyecto(String nombreProyecto) {
+        this.nombreProyecto = nombreProyecto;
+    }
+
+    public String getDescripcionProyecto() {
+        return descripcionProyecto;
+    }
+
+    public void setDescripcionProyecto(String descripcionProyecto) {
+        this.descripcionProyecto = descripcionProyecto;
+    }
+
+    public String getLinkProyecto() {
+        return linkProyecto;
+    }
+
+    public void setLinkProyecto(String linkProyecto) {
+        this.linkProyecto = linkProyecto;
+    }
+
 }

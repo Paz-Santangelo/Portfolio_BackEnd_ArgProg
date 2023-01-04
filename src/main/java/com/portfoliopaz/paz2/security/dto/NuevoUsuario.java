@@ -11,6 +11,13 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
 
+    public NuevoUsuario(String nombre, String nombreUsuario, String email, String password) {
+        this.nombre = nombre;
+        this.nombreUsuario = nombreUsuario;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getNombre() {
         return nombre;
     }

@@ -11,10 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
 @Entity
 public class Persona {
 
@@ -63,6 +60,86 @@ public class Persona {
         this.nombreCompleto = nombreCompleto;
         this.titulo = titulo;
         this.acerca = acerca;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getImgPerfil() {
+        return imgPerfil;
+    }
+
+    public void setImgPerfil(String imgPerfil) {
+        this.imgPerfil = imgPerfil;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAcerca() {
+        return acerca;
+    }
+
+    public void setAcerca(String acerca) {
+        this.acerca = acerca;
+    }
+
+    public List<Experiencia> getExperiencias() {
+        return experiencias;
+    }
+
+    public void setExperiencias(List<Experiencia> experiencias) {
+        this.experiencias = experiencias;
+    }
+
+    public List<Educacion> getEducacion() {
+        return educacion;
+    }
+
+    public void setEducacion(List<Educacion> educacion) {
+        this.educacion = educacion;
+    }
+
+    public List<HabilidadDura> getHabilidadesDuras() {
+        return HabilidadesDuras;
+    }
+
+    public void setHabilidadesDuras(List<HabilidadDura> HabilidadesDuras) {
+        this.HabilidadesDuras = HabilidadesDuras;
+    }
+
+    public List<HabilidadBlanda> getHabilidadesBlandas() {
+        return habilidadesBlandas;
+    }
+
+    public void setHabilidadesBlandas(List<HabilidadBlanda> habilidadesBlandas) {
+        this.habilidadesBlandas = habilidadesBlandas;
+    }
+
+    public List<Proyecto> getProyecto() {
+        return proyecto;
+    }
+
+    public void setProyecto(List<Proyecto> proyecto) {
+        this.proyecto = proyecto;
     }
 
 }

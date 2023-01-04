@@ -1,9 +1,5 @@
 package com.portfoliopaz.paz2.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter @Setter
 public class EducacionDto {
     
     private String imgCurso;
@@ -20,5 +16,37 @@ public class EducacionDto {
         this.anio = anio;
         this.descripcionCurso = descripcionCurso;
     }
- 
+
+    public String getImgCurso() {
+        return imgCurso;
+    }
+
+    public void setImgCurso(String imgCurso) {
+        this.imgCurso = imgCurso;
+    }
+
+    public String getTituloCurso() {
+        return tituloCurso;
+    }
+
+    public void setTituloCurso(String tituloCurso) {
+        this.tituloCurso = tituloCurso;
+    }
+
+    public String getAnio() {
+        return anio;
+    }
+
+    public void setAnio(String anio) {
+        this.anio = anio;
+    }
+
+    public String getDescripcionCurso() {
+        return descripcionCurso;
+    }
+
+    public void setDescripcionCurso(String descripcionCurso) {
+        this.descripcionCurso = descripcionCurso;
+    }
+
 }

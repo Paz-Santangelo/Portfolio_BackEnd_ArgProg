@@ -1,9 +1,5 @@
 package com.portfoliopaz.paz2.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter @Setter
 public class PersonaDto {
     
     private String imgPerfil;
@@ -20,5 +16,39 @@ public class PersonaDto {
         this.titulo = titulo;
         this.acerca = acerca;
     }
+
+    public String getImgPerfil() {
+        return imgPerfil;
+    }
+
+    public void setImgPerfil(String imgPerfil) {
+        this.imgPerfil = imgPerfil;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAcerca() {
+        return acerca;
+    }
+
+    public void setAcerca(String acerca) {
+        this.acerca = acerca;
+    }
+    
+    
 
 }
